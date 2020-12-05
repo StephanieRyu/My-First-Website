@@ -1,31 +1,89 @@
 <html>
 	<head>
-		<title> Hidden Wonders in Luzon: Contact Info Page </title>
+		<title> Hidden Wonders in Luzon: Contact Information Page </title>
+		<style>
+			body {
+			background-color:black;
+			}
+			.upper {
+  			position: relative;
+			text-align: center;
+			}
+			.centered {
+  			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			transform: translate(-50%, -50%);
+			font-family: Times;
+			color: #add8e6;
+			font-size: 50px;
+			font-weight: bold;
+			}
+			.lower {
+			position: relative;
+			text-align: center;
+			}
+			.lowerLeft {
+			position: absolute;
+  			left: 25px;
+			font-family: Arial;
+			color: #ffffff;
+			}
+			.rectangle {
+			position: absolute;
+			height: 50px;
+  			width: 10px;
+  			background-color: #add8e6;
+			top: 35px;
+			left: 170px;
+			}
+			.CoInfo {
+			position: absolute;
+			font-size: 40px;
+			font-weight: bold;
+			top: 40px;
+			left: 185px;
+			}
+			.photo {
+			position: absolute;
+			top: 100px;
+			left: 100px;
+			}
+			.fill-up {
+			position: absolute;
+			top: 250px;
+			left: 800px;
+			}
+
+		</style>
 	</head>
+
 	<div class="navigational bar">
 		<img src="LOGO.png" alt="Top" width="20" height="20"/>
-  		<a class="active" href="Homepage.html"> Home</a>
-  		<a href="Second.html"> Contact Info</a>
+  		<a class="active" href="Home.html"> Home</a>
+  		<a href="Contact.html"> Contact Info</a>
 		<input type="text" placeholder="Search..">
 	</div>
-	<body style="background-color:black;">
-		<img src="Top.png" alt="Top" width="1430" height="403"/>
-		<p align='center'>
-			<font face = "Times" color="#add8e6" size="10">
-			<b>Have some questions?</b><br></font>
-		</p>
 
-		<div class ="mid" align='left'>
-			<font face = "Arial" color="#ffffff" size="5">
-			<b>Contact Information</b><br></font>
-			<img src="LOGO.png" alt="Logo" width="654" height="486.5"/>
-			
-			<div class ="fill-up" align='right'>
+	<body>
+		<div class="upper">
+  			<img src="Top.png" alt="Top" style="width:100%;">
+  			<div class="centered">Have Some Questions?</div>
+		</div>
+
+		<div class="lower">
+			<div class="lowerLeft">
+				<div class="rectangle"></div>
+				<div class="CoInfo">Contact_Information<br></div>
+				<div class="photo"><img src="LOGO.png" alt="Logo" width="654" height="486.5"/><br></div>
+			</div>
+
+			<div class ="fill-up">
 				<input type="text" NAME="Full Name" VALUE="Full Name" SIZE=60><br>
 				<input type="text" EMAIL="Email" VALUE="Email" SIZE=60><br>
 				<textarea message=“Message” ROWS=7 COLS=57 WRAP>Message</TEXTAREA>,<br>
 				<button type="button" style="background-color:#add8e6;">Submit Message </button>
 			</div>
-		</div>
+		
 	</body>
 </html>
